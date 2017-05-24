@@ -1,0 +1,11 @@
+= README
+
+`docker-git-draw` packs https://github.com/sensorflo/git-draw[git-draw] plus required tools into a Docker image.
+
+git-draw allows you to create a *graphviz* dot-file or an image thereof representing a Git log as a graph (DAG).
+
+[source, shell]
+.Example
+----
+docker run -v $PWD:/workspace softwarecraftsmen/git-draw git-draw -i --hide-blobcontent --hide-reflogs --hide-legend --hide-refs --hide-index
+----
